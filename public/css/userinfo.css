@@ -1,0 +1,121 @@
+
+  *{
+        box-sizing:border-box;
+     }
+        header{
+          width: 100%;
+         padding: 0 2vw;
+         text-align: center;
+         background-color: #f2f2f2;
+         display: flex;
+         justify-content: space-between;
+         line-height: 10vw;
+      }
+       header div:nth-child(1) img{
+          width:3vw;
+      }
+       header div:nth-child(2){
+           font-size: 5vw;
+           color: #666;
+      }
+        header div:nth-child(3) img{
+             width:6vw;
+      }
+      #b1{
+        background-color:#ffffff;
+        /*padding-bottom: 110px;*/
+      }
+      #b1>.new_info{
+        background: #FF6B00;
+        text-align: center;
+          position: relative;
+          height:26vw;
+        }
+      .new_info .name h2{
+          font-size:5vw;
+          color:white;
+          margin: 0;
+          padding: 5vw 0 3vw 0;
+        }
+       .new_info .islogo {
+         width: 20vw;
+         height:20vw;
+         background-color: #FFD24D;
+         margin: 0 auto;
+         border-radius:50%;
+         position: absolute;
+         top: 16vw;
+         left: 40vw;
+       }
+       .new_info b{
+         color: white;
+         font-size: 6vw;
+         position: absolute;
+         top: 5vw;
+         left: 8vw;
+
+       }
+       .new_nav{
+         background-color: white;
+       }
+       .new_nav>ul{
+         background-color:#fff;
+         width:100%;
+         list-style:none;
+         padding:0;
+         padding: 15vw 0;
+         float: right;
+
+       }
+       .new_nav ul li{
+         width: 33.333%;
+         border-right: 1px solid gray;
+         float:left;
+         text-align: center
+       }
+       .new_nav>ul li .logo{
+         width: 13vw;
+         height:10vw;
+         background-image: url(/img/222.gif);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         margin: 10px auto;
+       }
+       .new_nav>ul li p{
+         font-size: 3vw;
+         margin: 2vw 0;
+       }
+       .new_nav>ul>li .line{
+         width:10vw;
+         height:0.2vw;
+         background-color: #e6598d;
+         margin: 0 auto 10px auto;
+       }
+        .new_nav>ul li .a2{
+            background-image: url(/img/223.gif);
+        }
+        .new_nav>ul li .a3{
+            background-image: url(/img/224.gif);
+        }
+        .new_nav>ul li .r2{
+          background-color: #9acb62;
+        }
+          .new_nav>ul li .r3{
+          background-color: #ffb523;
+        }
+        #list ul{
+          margin-top: 3vw;
+        }
+        #list{
+          margin-bottom:20vw;
+        }
+        #list ul li{
+          font-size: 3vw;
+        }
+        .clear{
+            clear:both;
+        }
+        #footer{
+          position:fixed;
+          bottom: 0;
+        }

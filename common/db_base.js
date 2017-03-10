@@ -4,13 +4,12 @@ mongoose.Promise = global.Promise
 mongoose.connect("mongodb://localhost/book_shop")
 
 /**
- * 数据库操作基础模型
+ * 数据库操作基础模型 引进Es6中class类
  */
 class DBBase{
-    constructor(model){
+    constructor(model){  //指针
         this.model = model
     }
-
     /**
      * 分页取数据
      * @param  {[type]}   page     当前页码
@@ -69,8 +68,12 @@ class DBBase{
      */
     save(m,callback){
         var data = new this.model(m)
+
         data.save()
-            .then(callback(true))
+            .then(data=>{
+                 // console.log(data)
+                callback(true,data)
+            })
             .catch(err=>{
                 console.log(err)
             })

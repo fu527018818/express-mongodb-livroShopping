@@ -15,6 +15,7 @@ var userSchema = new Schema({
         dafault:Date.now
     }
 })
+
 var User = mongoose.model("user",userSchema)
 
 /**
@@ -56,7 +57,7 @@ class UserDal extends DBBase{
         this.model.findOne({mobile:mobile})
             .then(res=>{
                 //判断用户是否存在
-                console.log(res)
+                // console.log(res)
                 if(res){
                     callback({isOK:true,user:res})
                 }
@@ -65,7 +66,7 @@ class UserDal extends DBBase{
                 }
             })
             .catch(err=>{
-                console.log(err)
+                // console.log(err)
                 callback({isOK:false})
             })
     }

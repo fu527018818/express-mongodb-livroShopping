@@ -149,7 +149,9 @@
 		    	},
 		    	success:function(res){
 		    		if(res.status=="y"){
-		    			showTip("successTip",res.msg)
+                        console.log(res.status)
+		    			window.location.href = "/login"
+
 		    		}
 		    		else{
 		    			showTip("errTip",res.msg)

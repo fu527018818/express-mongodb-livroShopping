@@ -11,9 +11,9 @@ router.get('/reg',(req,res)=>{
 router.post('/reg',(req,res)=>{
 	userDal.validateMobileCanReg(req.body.mobile,canReg=>{
 		if(canReg){
-			userDal.save(req.body,isOK=>{
+			userDal.save(req.body,(isOK,data)=>{
 				if(isOK){
-					res.cookie('userid',data.user.id,{path:'/'})//登录成功后写cookie
+					res.cookie('userid',data.id,{path:'/'})//登录成功后写cookie
 					res.json({
 						status:"y",
 						msg:"注册成功"
